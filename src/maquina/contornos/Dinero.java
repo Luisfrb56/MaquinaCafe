@@ -38,14 +38,18 @@ public class Dinero {
         return "Dinero: " + "\nCredito: " + credito + "\nCambio=" + cambio;
     }
     public void introducirDinero(){
+        JOptionPane.showMessageDialog(null, "Precio del producto: "+precio, "Titulo", JOptionPane.DEFAULT_OPTION);
         boolean exit=true;
         do{
             if(credito<precio){
                 
     credito=Float.parseFloat(JOptionPane.showInputDialog("¿ Valor de moneda introducida?"))+credito;
-    
+    if(credito<precio){
+    JOptionPane.showMessageDialog(null, "Faltan: "+(precio-credito)+"€", "Titulo", JOptionPane.DEFAULT_OPTION);}
             }if(credito==precio){
                 exit=false;
+                        JOptionPane.showMessageDialog(null, "Recoja su bebida", "Titulo", JOptionPane.DEFAULT_OPTION);
+
             }if(credito>precio){
                       cambio=credito-precio;
                       JOptionPane.showMessageDialog(null, "Recoja su cambio: " +cambio+"€");
