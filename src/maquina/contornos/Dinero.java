@@ -9,6 +9,8 @@ public class Dinero {
     private float credito=0;
     private float cambio;
 
+    
+
     public Dinero() {
     }
 

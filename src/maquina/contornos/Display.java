@@ -9,6 +9,13 @@ import static maquina.contornos.Producto.precio;
 public class Display {
 
     
+    
+    
+    
+    
+    
+    
+    
     public void listaProductos(ArrayList<Producto> listaProductos){
         
     }
