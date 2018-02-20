@@ -6,7 +6,7 @@ public class Botonera {
 //int seleccion = JOptionPane.showOptionDialog(null, "Es necesario que seleccione una opcion", "Titulo", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, icon, options, options[0]);
     public void seleccionBebida() {
 
-        String[] bebidas = {"Café", "Té", "Azucar"};
+        String[] bebidas = {"Café", "Té", "Chocolate"};
 
         int num = JOptionPane.showOptionDialog(null, "***Seleccione una bebida***", "Titulo", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, bebidas, bebidas[1]);
         switch (num) {
@@ -31,7 +31,7 @@ public class Botonera {
 
 
 do {       
-      num = JOptionPane.showOptionDialog(null, null, "Titulo", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, opciones, opciones[0]);
+      num = JOptionPane.showOptionDialog(null, "Cantidad de azucar", "Azucar", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, opciones, opciones[0]);
 
     switch (num) {
             case 0:
@@ -54,6 +54,7 @@ do {
                }else{
                        System.out.println("MIN azucar");
                        exit=true;
+                       break;
         }
             case 2:
                 exit=true;

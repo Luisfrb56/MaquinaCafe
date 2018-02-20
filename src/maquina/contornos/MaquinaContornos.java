@@ -10,6 +10,9 @@ Dinero din=new Dinero();
 boton.seleccionBebida();
 boton.añadirAzucar();
 din.introducirDinero();
+Display dis=new Display();
+dis.procesoPreparacion();
+dis.bebidaLista();
 }
     
     }
